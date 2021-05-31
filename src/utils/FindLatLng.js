@@ -1,5 +1,5 @@
 const fetch = require('node-fetch');
-const key = require('./key');
+
 
 async function findLatLng(number, log, city, state) {
 
@@ -7,7 +7,7 @@ async function findLatLng(number, log, city, state) {
 
 
     
-    const url = `https://maps.googleapis.com/maps/api/geocode/json?address=${location}&key=${key}`
+    const url = process.env.GOOGLE_API_KEY;
 
     const data = await fetch(`${url}`);
 
