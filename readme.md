@@ -361,7 +361,7 @@ A API tambem conta com um sistema de validação dos campos para verificar se el
 
 - O campo complement da tabela address é OPCIONAl, caso não o preencha na hora de inserir, a tabela ficará sem essa coluna, caso faça a edição e adicione ele será inserido normalmente, e o contrário tambem.
 
-- Os campos lat e lng da tabela Address são gerados automaticamente através do consumo da API Geocode, entretanto, a key utilizada é unica para cada usuario, é recomendável que acesse o link https://developers.google.com/maps/documentation/geocoding/overview onde será redirecionado para criar sua própria key, que pode ser editada indo na pasta raiz e criando um arquivo .env e colocar a key, tem um arquivo example de como é a variavel, incluindo e mudar o valor da variavel key.
+- Os campos lat e lng da tabela Address são gerados automaticamente através do consumo da API Geocode, entretanto, a key utilizada é temporária, é recomendável que acesse o link https://developers.google.com/maps/documentation/geocoding/overview onde será redirecionado para criar sua própria key, que pode ser editada indo na pasta src/utils/key.js e mudar o valor da variavel key.
 
 - As colunas lat e lng SÂO APENAS para visualização, se o usuario tentar inserir manualmente, tanto nas rotas POST ou PUT, nada acontecerá.
 
